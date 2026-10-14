@@ -82,6 +82,7 @@ void InitPlayer(Player *player, SDL_Renderer *render, const char *imgpath)
   player->health = 100;  // Santé initiale du joueur
   player->max_health = 100;  // Santé maximale du joueur
   player->velocity = 10;  // Vitesse de déplacement du joueur
+  player->score = 0;      // score de jeu
 
   // Liaison des fonctions aux actions du joueur
   player->MoveRight = MoveRight;

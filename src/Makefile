@@ -20,5 +20,7 @@ $(TARGET): $(OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean compiled files
+run:
+	./game
 clean:
 	rm -f $(OBJ) $(TARGET)
