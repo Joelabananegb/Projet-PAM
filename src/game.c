@@ -73,6 +73,7 @@ void RenderScore(Player *player, TTF_Font *font, SDL_Renderer *render)
   SDL_Rect fontRect = {50, 50, 0 , 0};
   SDL_QueryTexture(fontText, NULL, NULL, &fontRect.w, &fontRect.h);
   SDL_RenderCopy(render, fontText, NULL, &fontRect);
+  SDL_DestroyTexture(fontText);
 }
 
 // Affiche l’écran d’accueil avec le bouton et la bannière
